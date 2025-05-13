@@ -43,7 +43,7 @@ namespace CleanArch.Infrastructure.Repository
             using (IDbConnection connection = new SqlConnection(_Configuration.GetConnectionString("DBConnection")))
             {
                  var result =  connection.QuerySingle(LeadsQueries.GetRandomCredManagerID);
-                 return result.CredMgrId;
+                return result.CredMgrId;
             }
         }
 
